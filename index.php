@@ -12,7 +12,7 @@ echo file_get_contents($url);
 
 }else{
 ?>
-xxxx
+
 <iframe src="https://www.offertoro.com/ifr/show/22813/<?php echo $user; ?>/12608" frameborder="0" width="100%" height="100%" ></iframe> 
 
 <?php

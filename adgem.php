@@ -5,6 +5,7 @@ $user =$_GET['user'];
 $url = "https://www.m1m1.xyz/offers/adgem.php?user=".$user;
 
 include 'code.php';
+echo $code;
 
 if ($code =="US" ||
 $code =="CA"||

@@ -31,7 +31,7 @@ if($response !== false) {
 	$json = json_decode($response, true);
 	
 $code =$json['countryCode'];
-
+print_r($json) ;
 
 }
 

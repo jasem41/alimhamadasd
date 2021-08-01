@@ -4,29 +4,17 @@
 $user =$_GET['user'];
 $url = "https://www.m1m1.xyz/offers/adgem.php?user=".$user;
 
-include 'code.php';
-echo $code."ass";
+Redirect($url,false);
 
-if ($code =="US" ||
-$code =="CA"||
-$code =="FR"||
-$code =="NL"){
+ function Redirect($url, $permanent = false)
+{
+    if (headers_sent() === false)
+    {
+        header('Location: ' . $url, true, ($permanent === true) ? 301 : 302);
+    }
 
-
-echo file_get_contents($url);
-
-}else{
-?>
-
-دولتك محظورة 
-الرجاء ,تشغيل الفي بي ان
-على احدى الدول :
-فرنسا
-هولندا
-امريكا
-كندا
-<?php
-
+    exit();
 }
 ?>
+
 
